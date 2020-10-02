@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="me.zhengjie.service.mapper.LocalStorageMapper">
+
+  <!-- 通用查询结果列 -->
+  <!--
+  <sql id="Base_Column_List">
+      a.storage_id, a.real_name, a.name, a.suffix, a.path, a.type, a.size, a.create_by, a.update_by, a.create_time, a.update_time
+  </sql>
+  -->
+</mapper>

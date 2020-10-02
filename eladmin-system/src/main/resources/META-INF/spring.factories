@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  me.zhengjie.config.MybatisPlusFillHandler,\
+    me.zhengjie.config.MybatisPlusConfig
