@@ -13,7 +13,7 @@ import me.zhengjie.modules.mnt.domain.Database;
 import me.zhengjie.modules.mnt.service.DatabaseService;
 import me.zhengjie.modules.mnt.service.dto.DatabaseDto;
 import me.zhengjie.modules.mnt.service.dto.DatabaseQueryParam;
-import me.zhengjie.modules.mnt.mapper.DatabaseMapper;
+import me.zhengjie.modules.mnt.service.mapper.DatabaseMapper;
 import me.zhengjie.utils.PageUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

@@ -1,4 +1,4 @@
-package me.zhengjie.modules.mnt.mapper;
+package me.zhengjie.modules.mnt.service.mapper;
 
 import me.zhengjie.base.CommonMapper;
 import me.zhengjie.modules.mnt.domain.Deploy;

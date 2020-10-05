@@ -2,11 +2,10 @@ package me.zhengjie.modules.mnt.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.AllArgsConstructor;
 import me.zhengjie.base.impl.CommonServiceImpl;
 import me.zhengjie.modules.mnt.domain.DeploysServers;
-import me.zhengjie.modules.mnt.mapper.DeploysServersMapper;
+import me.zhengjie.modules.mnt.service.mapper.DeploysServersMapper;
 import me.zhengjie.modules.mnt.service.DeploysServersService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

@@ -12,7 +12,7 @@ import me.zhengjie.modules.mnt.domain.App;
 import me.zhengjie.modules.mnt.service.AppService;
 import me.zhengjie.modules.mnt.service.dto.AppDto;
 import me.zhengjie.modules.mnt.service.dto.AppQueryParam;
-import me.zhengjie.modules.mnt.mapper.AppMapper;
+import me.zhengjie.modules.mnt.service.mapper.AppMapper;
 import me.zhengjie.utils.PageUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

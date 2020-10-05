@@ -11,7 +11,7 @@ import me.zhengjie.modules.mnt.domain.DeployHistory;
 import me.zhengjie.modules.mnt.service.DeployHistoryService;
 import me.zhengjie.modules.mnt.service.dto.DeployHistoryDto;
 import me.zhengjie.modules.mnt.service.dto.DeployHistoryQueryParam;
-import me.zhengjie.modules.mnt.mapper.DeployHistoryMapper;
+import me.zhengjie.modules.mnt.service.mapper.DeployHistoryMapper;
 import me.zhengjie.utils.PageUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

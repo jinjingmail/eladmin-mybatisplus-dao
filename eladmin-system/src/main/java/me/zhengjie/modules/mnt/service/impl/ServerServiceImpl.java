@@ -14,7 +14,7 @@ import me.zhengjie.modules.mnt.domain.Server;
 import me.zhengjie.modules.mnt.service.ServerService;
 import me.zhengjie.modules.mnt.service.dto.ServerDto;
 import me.zhengjie.modules.mnt.service.dto.ServerQueryParam;
-import me.zhengjie.modules.mnt.mapper.ServerMapper;
+import me.zhengjie.modules.mnt.service.mapper.ServerMapper;
 import me.zhengjie.utils.PageUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
