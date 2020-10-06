@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.IdType;
 import io.swagger.annotations.ApiModelProperty;
+import me.zhengjie.base.BaseEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -23,7 +24,6 @@ import java.sql.Timestamp;
 <#if hasBigDecimal>
 import java.math.BigDecimal;
 </#if>
-import java.io.Serializable;
 import java.util.Date;
 import java.sql.Timestamp;
 
@@ -36,7 +36,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @TableName("${tableName}")
-public class ${className} implements Serializable {
+public class ${className} extends BaseEntity {
     private static final long serialVersionUID = 1L;
 <#if columns??>
     <#list columns as column>

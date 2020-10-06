@@ -1,5 +1,6 @@
 package ${package}.service.dto;
 
+import me.zhengjie.base.BaseDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -26,7 +27,7 @@ import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 @Setter
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class ${className}Dto implements Serializable {
+public class ${className}Dto extends BaseDto {
     private static final long serialVersionUID = 1L;
 <#if columns??>
     <#list columns as column>
