@@ -14,7 +14,7 @@ import java.util.Date;
  */
 @Getter
 @Setter
-public abstract class CommonDto implements Serializable{
+public abstract class DataDto extends BaseDto{
 
     private String createBy;
 

@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import lombok.AllArgsConstructor;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.base.QueryHelpMybatisPlus;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.exception.BadRequestException;
 import me.zhengjie.exception.EntityExistException;
 import me.zhengjie.modules.system.domain.Job;
@@ -46,7 +46,7 @@ import java.util.*;
 @AllArgsConstructor
 @CacheConfig(cacheNames = "job")
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
-public class JobServiceImpl extends CommonServiceImpl<Job> implements JobService {
+public class JobServiceImpl extends BaseServiceImpl<Job> implements JobService {
 
     private final JobMapper jobMapper;
     private final UsersJobsMapper usersJobsMapper;

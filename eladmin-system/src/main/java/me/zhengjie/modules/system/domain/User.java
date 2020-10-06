@@ -1,8 +1,6 @@
 package me.zhengjie.modules.system.domain;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.IdType;
 import io.swagger.annotations.ApiModelProperty;
@@ -10,12 +8,11 @@ import lombok.Data;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
 import lombok.EqualsAndHashCode;
-import me.zhengjie.base.CommonEntity;
+import me.zhengjie.base.DataEntity;
 
 import javax.validation.constraints.*;
 import java.io.Serializable;
 import java.util.Date;
-import java.sql.Timestamp;
 
 /**
 * @author jinjin
@@ -24,7 +21,7 @@ import java.sql.Timestamp;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @TableName("sys_user")
-public class User extends CommonEntity implements Serializable {
+public class User extends DataEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "ID")

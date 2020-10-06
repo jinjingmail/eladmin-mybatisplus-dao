@@ -15,7 +15,7 @@
  */
 package me.zhengjie.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.domain.LocalStorage;
 import me.zhengjie.service.dto.LocalStorageDto;
 import me.zhengjie.service.dto.LocalStorageQueryParam;
@@ -29,7 +29,7 @@ import java.util.List;
 * @author Zheng Jie
 * @date 2019-09-05
 */
-public interface LocalStorageService extends CommonService<LocalStorage> {
+public interface LocalStorageService extends BaseService<LocalStorage> {
 
     /**
      * 分页查询

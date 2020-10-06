@@ -1,6 +1,6 @@
 package me.zhengjie.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.domain.Log;
 import me.zhengjie.service.dto.LogQueryParam;
@@ -12,13 +12,12 @@ import org.springframework.scheduling.annotation.Async;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.io.IOException;
-import java.util.Set;
 
 /**
 * @author jinjin
 * @date 2020-09-27
 */
-public interface LogService  extends CommonService<Log>{
+public interface LogService  extends BaseService<Log> {
 
     static final String CACHE_KEY = "log";
 

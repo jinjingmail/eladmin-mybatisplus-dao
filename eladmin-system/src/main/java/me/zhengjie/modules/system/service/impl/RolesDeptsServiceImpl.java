@@ -3,7 +3,7 @@ package me.zhengjie.modules.system.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import lombok.AllArgsConstructor;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.modules.system.domain.RolesDepts;
 import me.zhengjie.modules.system.service.RolesDeptsService;
 import me.zhengjie.modules.system.service.mapper.RolesDeptsMapper;
@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 @Service
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
-public class RolesDeptsServiceImpl extends CommonServiceImpl<RolesDepts> implements RolesDeptsService {
+public class RolesDeptsServiceImpl extends BaseServiceImpl<RolesDepts> implements RolesDeptsService {
     private final RolesDeptsMapper rolesDeptsMapper;
 
     @Override

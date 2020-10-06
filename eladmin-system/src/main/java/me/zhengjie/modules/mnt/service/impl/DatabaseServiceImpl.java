@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.base.QueryHelpMybatisPlus;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.modules.mnt.util.SqlUtils;
 import me.zhengjie.utils.ConvertUtil;
 import me.zhengjie.utils.FileUtil;
@@ -37,7 +37,7 @@ import java.util.*;
 @AllArgsConstructor
 // @CacheConfig(cacheNames = DatabaseService.CACHE_KEY)
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
-public class DatabaseServiceImpl extends CommonServiceImpl<Database> implements DatabaseService {
+public class DatabaseServiceImpl extends BaseServiceImpl<Database> implements DatabaseService {
 
     // private final RedisUtils redisUtils;
     private final DatabaseMapper databaseMapper;

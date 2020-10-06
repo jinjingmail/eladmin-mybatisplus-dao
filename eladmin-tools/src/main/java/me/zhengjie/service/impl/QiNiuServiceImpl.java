@@ -28,7 +28,7 @@ import com.qiniu.util.Auth;
 import lombok.RequiredArgsConstructor;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.base.QueryHelpMybatisPlus;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.domain.QiniuConfig;
 import me.zhengjie.domain.QiniuContent;
 import me.zhengjie.service.mapper.QiniuConfigMapper;
@@ -57,7 +57,7 @@ import java.util.*;
 @Service
 @RequiredArgsConstructor
 @CacheConfig(cacheNames = "qiNiu")
-public class QiNiuServiceImpl extends CommonServiceImpl<QiniuContent> implements QiNiuService {
+public class QiNiuServiceImpl extends BaseServiceImpl<QiniuContent> implements QiNiuService {
 
     private final QiniuConfigMapper qiNiuConfigRepository;
     private final QiniuContentMapper qiniuContentRepository;

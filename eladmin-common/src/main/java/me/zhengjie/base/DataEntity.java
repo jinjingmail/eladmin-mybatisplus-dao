@@ -15,7 +15,7 @@ import java.util.Date;
  */
 @Getter
 @Setter
-public abstract class CommonEntity implements Serializable{
+public abstract class DataEntity extends BaseEntity {
 
     @ApiModelProperty(value = "创建者")
     @TableField(fill= FieldFill.INSERT)
@@ -32,11 +32,4 @@ public abstract class CommonEntity implements Serializable{
     @ApiModelProperty(value = "更新时间")
     @TableField(fill= FieldFill.INSERT_UPDATE)
     private Date updateTime;
-
-    /* 分组校验 */
-    public @interface Create {}
-
-    /* 分组校验 */
-    public @interface Update {
-    }
 }

@@ -1,6 +1,6 @@
 package me.zhengjie.modules.quartz.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.modules.quartz.domain.QuartzJob;
 import me.zhengjie.modules.quartz.domain.QuartzLog;
@@ -17,7 +17,7 @@ import java.util.Set;
 * @author jinjin
 * @date 2020-09-27
 */
-public interface QuartzJobService extends CommonService<QuartzJob>{
+public interface QuartzJobService extends BaseService<QuartzJob> {
 
     static final String CACHE_KEY = "quartzJob";
 

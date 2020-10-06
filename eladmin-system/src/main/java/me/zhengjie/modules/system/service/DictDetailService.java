@@ -1,18 +1,18 @@
 package me.zhengjie.modules.system.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.modules.system.domain.DictDetail;
 import me.zhengjie.modules.system.service.dto.DictDetailDto;
 import me.zhengjie.modules.system.service.dto.DictDetailQueryParam;
 import org.springframework.data.domain.Pageable;
 import java.util.List;
-import java.io.IOException;
+
 /**
 * @author jinjin
 * @date 2020-09-24
 */
-public interface DictDetailService  extends CommonService<DictDetail>{
+public interface DictDetailService  extends BaseService<DictDetail> {
 
     /**
     * 查询数据分页

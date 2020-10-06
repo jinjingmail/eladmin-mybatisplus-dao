@@ -1,6 +1,6 @@
 package me.zhengjie.modules.system.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.modules.system.domain.Job;
 import me.zhengjie.modules.system.service.dto.JobDto;
@@ -16,7 +16,7 @@ import java.util.Set;
 * @author jinjin
 * @date 2020-09-25
 */
-public interface JobService  extends CommonService<Job>{
+public interface JobService  extends BaseService<Job> {
 
     PageInfo<JobDto> queryAll(JobQueryParam query, Pageable pageable);
 

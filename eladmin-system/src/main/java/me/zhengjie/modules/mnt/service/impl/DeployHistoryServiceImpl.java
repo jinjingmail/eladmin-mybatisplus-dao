@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import lombok.AllArgsConstructor;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.base.QueryHelpMybatisPlus;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.utils.ConvertUtil;
 import me.zhengjie.utils.FileUtil;
 import me.zhengjie.modules.mnt.domain.DeployHistory;
@@ -34,7 +34,7 @@ import java.util.*;
 @AllArgsConstructor
 // @CacheConfig(cacheNames = DeployHistoryService.CACHE_KEY)
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
-public class DeployHistoryServiceImpl extends CommonServiceImpl<DeployHistory> implements DeployHistoryService {
+public class DeployHistoryServiceImpl extends BaseServiceImpl<DeployHistory> implements DeployHistoryService {
 
     // private final RedisUtils redisUtils;
     private final DeployHistoryMapper deployHistoryMapper;

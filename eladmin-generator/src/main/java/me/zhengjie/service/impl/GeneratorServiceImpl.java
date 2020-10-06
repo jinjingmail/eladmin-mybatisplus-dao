@@ -21,7 +21,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import lombok.RequiredArgsConstructor;
 import me.zhengjie.base.PageInfo;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.domain.GenConfig;
 import me.zhengjie.domain.ColumnInfo;
 import me.zhengjie.domain.vo.TableInfo;
@@ -51,7 +51,7 @@ import java.util.stream.Collectors;
  */
 @Service
 @RequiredArgsConstructor
-public class GeneratorServiceImpl extends CommonServiceImpl<ColumnInfo> implements GeneratorService {
+public class GeneratorServiceImpl extends BaseServiceImpl<ColumnInfo> implements GeneratorService {
 
     private static final Logger log = LoggerFactory.getLogger(GeneratorServiceImpl.class);
     private final ColumnInfoMapper columnInfoMapper;

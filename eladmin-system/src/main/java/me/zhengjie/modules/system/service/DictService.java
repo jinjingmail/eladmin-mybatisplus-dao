@@ -1,6 +1,6 @@
 package me.zhengjie.modules.system.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.modules.system.domain.Dict;
 import me.zhengjie.modules.system.service.dto.DictDto;
@@ -16,7 +16,7 @@ import java.util.Set;
 * @author jinjin
 * @date 2020-09-24
 */
-public interface DictService  extends CommonService<Dict>{
+public interface DictService  extends BaseService<Dict> {
 
     /**
     * 查询数据分页

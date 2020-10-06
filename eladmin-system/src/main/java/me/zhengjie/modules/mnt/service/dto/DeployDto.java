@@ -4,7 +4,7 @@ import cn.hutool.core.collection.CollectionUtil;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import me.zhengjie.base.CommonDto;
+import me.zhengjie.base.DataDto;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 @Getter
 @Setter
 @NoArgsConstructor
-public class DeployDto extends CommonDto implements Serializable {
+public class DeployDto extends DataDto implements Serializable {
     private static final long serialVersionUID = 1L;
 
 

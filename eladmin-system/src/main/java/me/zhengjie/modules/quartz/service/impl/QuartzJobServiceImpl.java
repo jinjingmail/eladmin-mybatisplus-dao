@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import lombok.AllArgsConstructor;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.base.QueryHelpMybatisPlus;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.modules.quartz.domain.QuartzLog;
 import me.zhengjie.modules.quartz.service.mapper.QuartzLogMapper;
 import me.zhengjie.modules.quartz.service.dto.QuartzLogQueryParam;
@@ -39,7 +39,7 @@ import java.util.*;
 @AllArgsConstructor
 // @CacheConfig(cacheNames = QuartzJobService.CACHE_KEY)
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
-public class QuartzJobServiceImpl extends CommonServiceImpl<QuartzJob> implements QuartzJobService {
+public class QuartzJobServiceImpl extends BaseServiceImpl<QuartzJob> implements QuartzJobService {
 
     private final QuartzManage quartzManage;
     private final QuartzJobMapper jobMapper;

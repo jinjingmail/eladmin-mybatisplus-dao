@@ -7,7 +7,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
-import me.zhengjie.base.CommonEntity;
+import me.zhengjie.base.DataEntity;
 
 import javax.validation.constraints.*;
 import java.io.Serializable;
@@ -18,7 +18,7 @@ import java.io.Serializable;
 */
 @Data
 @TableName("sys_job")
-public class Job extends CommonEntity implements Serializable {
+public class Job extends DataEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "ID")

@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import lombok.AllArgsConstructor;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.base.QueryHelpMybatisPlus;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.exception.BadRequestException;
 import me.zhengjie.utils.ConvertUtil;
 import me.zhengjie.utils.FileUtil;
@@ -35,7 +35,7 @@ import java.util.*;
 @AllArgsConstructor
 // @CacheConfig(cacheNames = AppService.CACHE_KEY)
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
-public class AppServiceImpl extends CommonServiceImpl<App> implements AppService {
+public class AppServiceImpl extends BaseServiceImpl<App> implements AppService {
 
     // private final RedisUtils redisUtils;
     private final AppMapper appMapper;

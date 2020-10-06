@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import lombok.AllArgsConstructor;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.base.QueryHelpMybatisPlus;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.modules.system.domain.Dict;
 import me.zhengjie.modules.system.service.mapper.DictMapper;
 import me.zhengjie.utils.ConvertUtil;
@@ -36,7 +36,7 @@ import java.util.List;
 @AllArgsConstructor
 @CacheConfig(cacheNames = "dictDetail")
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
-public class DictDetailServiceImpl extends CommonServiceImpl<DictDetail> implements DictDetailService {
+public class DictDetailServiceImpl extends BaseServiceImpl<DictDetail> implements DictDetailService {
 
     private final DictDetailMapper dictDetailMapper;
     private final DictMapper dictMapper;

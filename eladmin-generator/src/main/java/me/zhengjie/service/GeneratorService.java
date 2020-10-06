@@ -15,7 +15,7 @@
  */
 package me.zhengjie.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.domain.GenConfig;
 import me.zhengjie.domain.ColumnInfo;
@@ -31,7 +31,7 @@ import java.util.List;
  * @author Zheng Jie
  * @date 2019-01-02
  */
-public interface GeneratorService extends CommonService<ColumnInfo> {
+public interface GeneratorService extends BaseService<ColumnInfo> {
 
     /**
      * 获取所有table

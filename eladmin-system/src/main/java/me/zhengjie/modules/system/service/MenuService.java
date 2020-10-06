@@ -1,11 +1,9 @@
 package me.zhengjie.modules.system.service;
 
-import me.zhengjie.base.CommonService;
-import me.zhengjie.base.PageInfo;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.modules.system.domain.Menu;
 import me.zhengjie.modules.system.service.dto.MenuDto;
 import me.zhengjie.modules.system.service.dto.MenuQueryParam;
-import org.springframework.data.domain.Pageable;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -16,7 +14,7 @@ import java.util.Set;
 * @author jinjin
 * @date 2020-09-25
 */
-public interface MenuService  extends CommonService<Menu>{
+public interface MenuService  extends BaseService<Menu> {
 
     /**
     * 查询数据分页

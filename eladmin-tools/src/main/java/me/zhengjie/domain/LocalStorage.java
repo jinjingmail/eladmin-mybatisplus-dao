@@ -10,7 +10,7 @@ import lombok.Setter;
 import lombok.EqualsAndHashCode;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
-import me.zhengjie.base.CommonEntity;
+import me.zhengjie.base.DataEntity;
 
 import java.io.Serializable;
 
@@ -23,7 +23,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @TableName("tool_local_storage")
-public class LocalStorage extends CommonEntity implements Serializable {
+public class LocalStorage extends DataEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
 

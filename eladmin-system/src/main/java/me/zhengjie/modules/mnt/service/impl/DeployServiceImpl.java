@@ -8,7 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.base.QueryHelpMybatisPlus;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.exception.BadRequestException;
 import me.zhengjie.modules.mnt.domain.*;
 import me.zhengjie.modules.mnt.service.mapper.DeploysServersMapper;
@@ -47,7 +47,7 @@ import java.util.*;
 @AllArgsConstructor
 // @CacheConfig(cacheNames = DeployService.CACHE_KEY)
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
-public class DeployServiceImpl extends CommonServiceImpl<Deploy> implements DeployService {
+public class DeployServiceImpl extends BaseServiceImpl<Deploy> implements DeployService {
 
     private final String FILE_SEPARATOR = "/";
     // private final RedisUtils redisUtils;

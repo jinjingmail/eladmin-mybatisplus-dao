@@ -15,14 +15,14 @@
  */
 package me.zhengjie.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.domain.GenConfig;
 
 /**
  * @author Zheng Jie
  * @date 2019-01-14
  */
-public interface GenConfigService extends CommonService<GenConfig> {
+public interface GenConfigService extends BaseService<GenConfig> {
 
     /**
      * 查询表配置

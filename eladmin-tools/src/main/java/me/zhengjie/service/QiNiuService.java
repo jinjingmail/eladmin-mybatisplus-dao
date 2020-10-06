@@ -15,7 +15,7 @@
  */
 package me.zhengjie.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.domain.QiniuConfig;
 import me.zhengjie.domain.QiniuContent;
 import me.zhengjie.service.dto.QiniuContentQueryParam;
@@ -30,7 +30,7 @@ import java.util.List;
  * @author Zheng Jie
  * @date 2018-12-31
  */
-public interface QiNiuService extends CommonService<QiniuContent> {
+public interface QiNiuService extends BaseService<QiniuContent> {
 
     /**
      * 查配置

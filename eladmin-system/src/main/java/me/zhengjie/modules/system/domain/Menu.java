@@ -8,7 +8,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
-import me.zhengjie.base.CommonEntity;
+import me.zhengjie.base.DataEntity;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -19,7 +19,7 @@ import java.util.Objects;
 */
 @Data
 @TableName("sys_menu")
-public class Menu extends CommonEntity implements Serializable {
+public class Menu extends DataEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "ID")

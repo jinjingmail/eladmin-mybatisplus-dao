@@ -11,7 +11,7 @@ import lombok.Setter;
 import lombok.EqualsAndHashCode;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
-import me.zhengjie.base.CommonEntity;
+import me.zhengjie.base.DataEntity;
 
 import java.io.Serializable;
 
@@ -24,7 +24,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @TableName("sys_quartz_job")
-public class QuartzJob extends CommonEntity implements Serializable {
+public class QuartzJob extends DataEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     public static final String JOB_KEY = "JOB_KEY";

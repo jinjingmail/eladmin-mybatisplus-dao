@@ -2,7 +2,7 @@ package me.zhengjie.modules.system.service.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
-import me.zhengjie.base.CommonDto;
+import me.zhengjie.base.DataDto;
 
 import java.io.Serializable;
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.Objects;
 @Setter
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class DeptDto extends CommonDto implements Serializable {
+public class DeptDto extends DataDto implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long id;

@@ -1,11 +1,9 @@
 package me.zhengjie.modules.system.service.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-import me.zhengjie.base.CommonDto;
+import me.zhengjie.base.DataDto;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -18,7 +16,7 @@ import java.util.Set;
 */
 @Getter
 @Setter
-public class UserDto extends CommonDto implements Serializable {
+public class UserDto extends DataDto implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long id;

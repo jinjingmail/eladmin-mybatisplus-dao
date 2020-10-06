@@ -10,7 +10,7 @@ import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import lombok.AllArgsConstructor;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.base.QueryHelpMybatisPlus;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.config.FileProperties;
 import me.zhengjie.exception.BadRequestException;
 import me.zhengjie.exception.EntityExistException;
@@ -58,7 +58,7 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 @CacheConfig(cacheNames = "user")
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
-public class UserServiceImpl extends CommonServiceImpl<User> implements UserService {
+public class UserServiceImpl extends BaseServiceImpl<User> implements UserService {
 
     private final FileProperties properties;
     private final RedisUtils redisUtils;

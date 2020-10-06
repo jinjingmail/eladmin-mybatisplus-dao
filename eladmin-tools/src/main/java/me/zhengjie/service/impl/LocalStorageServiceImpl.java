@@ -19,7 +19,7 @@ import cn.hutool.core.util.ObjectUtil;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import lombok.RequiredArgsConstructor;
 import me.zhengjie.base.QueryHelpMybatisPlus;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.config.FileProperties;
 import me.zhengjie.domain.LocalStorage;
 import me.zhengjie.service.dto.LocalStorageDto;
@@ -48,7 +48,7 @@ import javax.servlet.http.HttpServletResponse;
 @Service
 @RequiredArgsConstructor
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
-public class LocalStorageServiceImpl extends CommonServiceImpl<LocalStorage> implements LocalStorageService {
+public class LocalStorageServiceImpl extends BaseServiceImpl<LocalStorage> implements LocalStorageService {
 
     private final FileProperties properties;
     private final LocalStorageMapper localStorageMapper;

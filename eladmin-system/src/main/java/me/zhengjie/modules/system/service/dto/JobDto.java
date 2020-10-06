@@ -1,7 +1,7 @@
 package me.zhengjie.modules.system.service.dto;
 
 import lombok.*;
-import me.zhengjie.base.CommonDto;
+import me.zhengjie.base.DataDto;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -13,7 +13,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @NoArgsConstructor
-public class JobDto extends CommonDto implements Serializable {
+public class JobDto extends DataDto implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long id;

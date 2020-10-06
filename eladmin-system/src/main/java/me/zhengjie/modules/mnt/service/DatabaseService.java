@@ -1,6 +1,6 @@
 package me.zhengjie.modules.mnt.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.modules.mnt.domain.Database;
 import me.zhengjie.modules.mnt.service.dto.DatabaseDto;
@@ -16,7 +16,7 @@ import java.util.Set;
 * @author jinjin
 * @date 2020-09-27
 */
-public interface DatabaseService  extends CommonService<Database>{
+public interface DatabaseService  extends BaseService<Database> {
 
     static final String CACHE_KEY = "database";
 

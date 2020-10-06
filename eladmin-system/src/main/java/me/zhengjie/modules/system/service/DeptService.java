@@ -1,6 +1,6 @@
 package me.zhengjie.modules.system.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.modules.system.domain.Dept;
 import me.zhengjie.modules.system.service.dto.DeptDto;
 import me.zhengjie.modules.system.service.dto.DeptQueryParam;
@@ -14,7 +14,7 @@ import java.util.Set;
 * @author jinjin
 * @date 2020-09-25
 */
-public interface DeptService  extends CommonService<Dept>{
+public interface DeptService  extends BaseService<Dept> {
     /**
     * 查询所有数据不分页
     * @param query 条件参数

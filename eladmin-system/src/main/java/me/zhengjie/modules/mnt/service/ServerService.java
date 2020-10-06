@@ -1,6 +1,6 @@
 package me.zhengjie.modules.mnt.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.modules.mnt.domain.Server;
 import me.zhengjie.modules.mnt.service.dto.ServerDto;
@@ -16,7 +16,7 @@ import java.util.Set;
 * @author jinjin
 * @date 2020-09-27
 */
-public interface ServerService  extends CommonService<Server>{
+public interface ServerService  extends BaseService<Server> {
 
     static final String CACHE_KEY = "server";
 

@@ -1,6 +1,6 @@
 package me.zhengjie.modules.system.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.modules.system.domain.User;
 import me.zhengjie.modules.system.service.dto.UserDto;
@@ -18,7 +18,7 @@ import java.util.Set;
 * @author jinjin
 * @date 2020-09-25
 */
-public interface UserService  extends CommonService<User>{
+public interface UserService  extends BaseService<User> {
 
     /**
     * 查询数据分页

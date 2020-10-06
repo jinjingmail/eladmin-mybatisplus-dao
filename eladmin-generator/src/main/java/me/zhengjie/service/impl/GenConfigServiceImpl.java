@@ -17,7 +17,7 @@ package me.zhengjie.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import lombok.RequiredArgsConstructor;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.domain.GenConfig;
 import me.zhengjie.service.mapper.GenConfigMapper;
 import me.zhengjie.service.GenConfigService;
@@ -31,7 +31,7 @@ import java.io.File;
  */
 @Service
 @RequiredArgsConstructor
-public class GenConfigServiceImpl extends CommonServiceImpl<GenConfig> implements GenConfigService {
+public class GenConfigServiceImpl extends BaseServiceImpl<GenConfig> implements GenConfigService {
 
     private final GenConfigMapper genConfigMapper;
 

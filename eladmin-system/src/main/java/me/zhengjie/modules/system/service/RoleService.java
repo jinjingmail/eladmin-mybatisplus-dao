@@ -1,6 +1,6 @@
 package me.zhengjie.modules.system.service;
 
-import me.zhengjie.base.CommonService;
+import me.zhengjie.base.BaseService;
 import me.zhengjie.base.PageInfo;
 import me.zhengjie.modules.system.domain.Role;
 import me.zhengjie.modules.system.service.dto.RoleDto;
@@ -19,7 +19,7 @@ import java.util.Set;
 * @author jinjin
 * @date 2020-09-25
 */
-public interface RoleService  extends CommonService<Role>{
+public interface RoleService  extends BaseService<Role> {
 
     /**
     * 查询数据分页

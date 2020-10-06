@@ -3,7 +3,7 @@ package me.zhengjie.modules.system.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import lombok.AllArgsConstructor;
-import me.zhengjie.base.impl.CommonServiceImpl;
+import me.zhengjie.base.impl.BaseServiceImpl;
 import me.zhengjie.modules.system.domain.RolesMenus;
 import me.zhengjie.modules.system.service.RolesMenusService;
 import me.zhengjie.modules.system.service.mapper.RolesMenusMapper;
@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 @Service
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
-public class RolesMenusServiceImpl extends CommonServiceImpl<RolesMenus> implements RolesMenusService {
+public class RolesMenusServiceImpl extends BaseServiceImpl<RolesMenus> implements RolesMenusService {
 
     private final RolesMenusMapper rolesMenusMapper;
 

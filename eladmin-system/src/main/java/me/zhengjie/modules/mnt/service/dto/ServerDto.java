@@ -3,7 +3,7 @@ package me.zhengjie.modules.mnt.service.dto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import me.zhengjie.base.CommonDto;
+import me.zhengjie.base.DataDto;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -15,7 +15,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @NoArgsConstructor
-public class ServerDto extends CommonDto implements Serializable {
+public class ServerDto extends DataDto implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long id;
